@@ -1,0 +1,1 @@
+var heading_button_a = document.getElementsByClassName('ads-top-banner')[0].getElementsByClassName('button')[0]; heading_button_a.href = 'http://www.ucoz.ru/?pguid=3775280749'; heading_button_a.innerText = 'Создать сайт бесплатно';

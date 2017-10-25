@@ -1,0 +1,1136 @@
+
+<!-- saved from url=(0055)http://imcs.dvfu.ru/struc/kmf/download/method/sprav.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+
+<meta name="Generator" content="Microsoft Word 97">
+<title>Краткий справочник по HTML</title>
+</head>
+<body link="#0000ff" vlink="#800080" bgcolor="white">
+
+<center><p>
+<img src="./Краткий справочник по HTML_files/html.gif" width="32" height="32" border="0">
+<font size="+1" color="Green">
+<b>Краткий справочник по HTML</b></font>  <br>
+<font size="1">Подготовлен по материалам <b>Сапенаур С., Куэрсиа В.</b>
+Справочник Web-мастера: Пер. с англ. - К.: BHV, 1997.</font>
+
+</p></center>
+<p>
+<font size="-1">HTML -  (Hypertext Markup Language, язык разметки документа) - это 
+язык компоновки документов и спецификации гиперссылок, используемый для кодирования
+документов в системе World Wide Web. Документ, который написан на языке
+HTML представляет собой простой текст,
+в который вставлены флаги разметки, или теги (markup tags), в соответствии с
+которыми  программа просмотра (броузер) отображает содержимое дакумента:
+текст, изображения и данные других типов.
+
+</font></p><p><font size="-1">
+</font></p><p><font size="-1"><b><i><font size="4"><a name="m0">Синтаксис HTML-тегов</a></font></i></b><br>
+HTML-тег  состоит из имени, за которым может следовать список атрибутов
+тега.Текст тега заключается в угловые скобки (&lt; и &gt;). Простейший вариант
+тега - имя, заключенное в угловые скобки, например
+ &lt;HEAD&gt; или &lt; i &gt;. Для более сложных тегов характерно наличие атрибутов,
+ которые могут иметь конкретные значения, определенные автором, для видоизменения
+  функции тега.
+  </font></p><p><font size="-1">
+  Атрибуты тега следуют за именем и отделяются друг от друга одним или 
+  несколькими знаками табуляции, пробелами или символами возврата к началу 
+  строки. Порядок записи атрибутов значения не имеет. Значение атрибута, если таковое
+  имеется, следует за знаком равенства, стоящим после имени атрибута.
+  Если значение атрибута слово или число, то его можно просто указать после
+  знака равенства, не выделяя дополнительно.
+  Все остальные значения следует заключать в одинарные или двойные кавычки.
+  Длина значения атрибута не должна превосходить 1024 символа.
+  </font></p><p><font size="-1">
+  Чаще всего HTML-теги состоят из начального и конечного компонентов, 
+  между которыми размещаются текст и другие теги.
+  Имя конечного тега идентично имени начального, но перед именем конечного тега
+  ставится косая черта (/). Конечные теги не могут иметь атрибуты.</font>
+<font size="2"></font></p><p><font size="2">Здесь дается описание
+распространенных тегов и атрибутов HTML, которые в настоящее время используются
+ в Web-документах. Существует множество различных броузеров, которые поддерживают
+  не совпадающие между собой наборы тегов. Два самых популярных броузера –
+  Netscape Navigator и Microsoft Internet Explorer – поддерживают практически
+  все нестандартные расширения HTML. Наиболее распространенная версия броузера
+  Netscape Navigator – Netscape Navigator 3.0. Перед описанием тегов и атрибутов,
+     специфичных для этого броузера, стоит обозначение <i>N3</i>
+	  Текущая версия Internet Explorer фирмы
+	 Microsoft – тоже 3.0. Ей соответствует обозначение <i>IE3</i>. </font>
+<table cellspacing="3" border="0" cellpadding="4">
+<tbody><tr><td valign="TOP" colspan="2">
+<p><b><i><font size="4"><a name="m1">Описание структуры документа</a></font></i></b></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;HTML&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman"></font><p><font face="Times New Roman">&lt;HTML&gt;...&lt;/HTML&gt; <br>
+Начальный и конечный теги всего HTML-документа <b><br>
+<font size="-1"><b>Атрибуты</b></font></b><i><br>
+version = строка </i><br>
+Указывается версия HTML, которая была использована для создания данного документа.</font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;head&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman"></font><p><font face="Times New Roman">&lt;head&gt;...&lt;/head&gt; <br>
+начальный и конечный теги заголовка документа.</font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;title&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman"></font><p><font face="Times New Roman">&lt;title&gt;...&lt;/title&gt; <br>
+Начальный и конечный теги названия HTML-документа.</font></p></td>
+</tr>
+
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;body&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman"></font><p><font face="Times New Roman">&lt;body&gt;...&lt;/body&gt; <br>
+начальный и конечный теги тела документа. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><i><br>
+alink = <a href="http://imcs.dvfu.ru/struc/kmf/download/method/color.htm">цвет</a> </i><br>
+Установка цвета активных гипертекстовых ссылок в документе. </font><i><br>
+Backgroud = url </i><font face="Times New Roman"><br>
+Указывается URL фонового изображения. <i><br>
+Bgcolor = <a href="http://imcs.dvfu.ru/struc/kmf/download/method/color.htm">цвет</a> </i><br>
+Установка цвета фона документа. <i><br>
+Bgproperties = значение <br>
+IE2 и выше</i>. Если значение равно fixed, запрещается прокрутка фонового изображения вместе с содержимым документа. <i><br>
+Leftmargin = значения <br>
+IE2 и выше</i>. Установка размера (в пикселях) левого поля документа. <i><br>
+link = <a href="http://imcs.dvfu.ru/struc/kmf/download/method/color.htm">цвет</a> </i><br>
+Установка цвета “непосещенных” гипертекстовых ссылок в документе. <i><br>
+Text = <a href="http://imcs.dvfu.ru/struc/kmf/download/method/color.htm">цвет</a> </i><br>
+Установка цвета обычного текста в документе. <i><br>
+Topmargin = значения <br>
+IE2 и выше</i>. Установка размера (в пикселях) верхнего поля документа. <i><br>
+vlink = <a href="http://imcs.dvfu.ru/struc/kmf/download/method/color.htm">цвет</a> </i><br>
+Установка цвета “посещенных” ссылок в документе. </font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;style&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<p>&lt;style&gt;...&lt;/style&gt; <i><font face="Times New Roman"><br>
+Только IE3</font></i><font face="Times New Roman">. Заключает в себе список элементов стиля, которые необходимо использовать для форматирования документа. Блок &lt;style&gt; идет перед тегом &lt;body&gt; и вне всех прочих элементов, кроме &lt;html&gt;...&lt;/html&gt;.</font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;meta&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman"></font><p><font face="Times New Roman">&lt;meta&gt;...&lt;/meta&gt; <br>
+Предоставление дополнительной информации о документе. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b></font><i><br>
+c<font face="Times New Roman">ontent = строка </font></i><font face="Times New Roman"><br>
+Указывается строка для мета-информации. Этот атрибут является необходимым. <br>
+Для операций “вытягивания” на стороне клиента посредством </font><i>content = "n;url = url"</i><font face="Times New Roman"> броузеру дается указание загрузить указанный </font><i>url</i><font face="Times New Roman"> через </font><i>n</i><font face="Times New Roman"> секунд. Если URL не задан, перезагружается исходный документ. Необходимо использовать с </font><i>http-equiv = ”refresh”</i><font face="Times New Roman"> в </font><i>&lt;meta&gt;.</i> <i><font face="Times New Roman"><br>
+http-equiv = строка </font></i><font face="Times New Roman"><br>
+Указывается эквивалентное HTTP-имя для данной метаинформации и дается команда серверу включить данное имя и содержимое в HTTP - заголовок для данного документа для передачи его клиенту. <br>
+При задании значение refresh в документе создается “клиентское вытягивание”. <i><br>
+Name = строка </i><br>
+Указывается имя метаинформации.</font></p></td>
+</tr>
+<tr><td valign="TOP" colspan="2">
+<p>&nbsp; <b><i><font size="4"><a name="m2">Управление разрывом строк</a></font> </i></b></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>&lt;p&gt;</b></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman">&lt;p&gt;...&lt;/p&gt; <br>
+начальный и конечный теги абзаца <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><i><br>
+align = тип </i><br>
+Задается способ выравнивания текста в абзаце: по левому краю (left), центру(center), или правому краю (right). </font></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>&lt;hr&gt;</b></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman">
+&lt;hr&gt; 
+разрыв текущего текстового потока. В месте разрыва будет вставлена горизонтальная линейка. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><i><br>
+align = тип </i><br>
+Задается способ выравнивания линейки: по левому краю (left), центру (center), или правому краю (right). </font><i><br>
+Noshade </i><font face="Times New Roman"><br>
+Запрещается использование объемного затенения при отображении линейки. </font><i><br>
+S<font face="Times New Roman">ize = пиксели </font></i><font face="Times New Roman"><br>
+Установка толщины линейки равной целому числу пикселей. <i><br>
+Width = значение </i><br>
+Установка ширины линейки либо равной целому числу пикселей, либо в процентах от ширины страницы. </font></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>&lt;div&gt;</b></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman"></font><p><font face="Times New Roman">&lt;div&gt;...&lt;/div&gt; <br>
+В документе создается раздел. <b><br>
+<font size="-1"><b>Атрибуты</b></font></b></font> <i><br>
+al<font face="Times New Roman">ign = тип </font></i><font face="Times New Roman"><br>
+Текст в разделе будет выровнен по левому краю (left), центру(center), или правому краю (right). </font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;br&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman"></font><p><font face="Times New Roman">&lt;br&gt; <br>
+Разрыв текущего текстового потока и возобновление его с начала следующей строки. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><i><br>
+clear = поле </i><br>
+Задается “обтекание” объекта, расположение которого указано значением данного атрибута (left, right или all). При переносе на новую строку текст будет размещаться так, чтобы объект оставался видимым. </font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;nobr&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman"></font><p><font face="Times New Roman">&lt;nobr&gt;...&lt;/nobr&gt; <br>
+В заключенном в теги тексте разрывы не допускаются. </font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;wbr&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman"></font><p><font face="Times New Roman">&lt;wbr&gt;...&lt;/wbr&gt; <br>
+Начальный и конечный теги точки возможного разрыва слова в разделе &lt;nobr&gt;. </font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>&lt;spacer&gt;</b></td>
+<td width="75%" valign="TOP">
+<p>
+&lt;spacer&gt; <i><font face="Times New Roman"><br>
+Только N3</font></i><font face="Times New Roman">. Вставить в текст разделитель. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><i><br>
+type = тип </i><br>
+Указывается тип разделителя: </font><i>vertical</i><font face="Times New Roman"> - между двумя строками текста помещается область пустого пространства указанного размера; </font><i>horizontal</i><font face="Times New Roman"> - область пустого пространства указанного размера помещается между словами или символами; block - вставка прямоугольной области (подобно &lt;</font><i>img</i>&gt;). <i><br>
+Size = n </i><font face="Times New Roman"><br>
+Указывается (в пикселях) ширина разделителя типа </font><i>horizontal</i><font face="Times New Roman"> или высота разделителя типа </font><i>vertical</i>. <i><br>
+Width = n </i><font face="Times New Roman"><br>
+Указывается (в пикселях) ширина разделителя типа block. </font><i><br>
+Height = n </i><font face="Times New Roman"><br>
+Указывается (в пикселях) высота разделителя типа block. <i><br>
+Align = значение </i><br>
+Указывается способ выравнивания разделителя типа block относительно окружающего текста. Значения такие же, как в теге &lt;</font><i>img</i>&gt;.</p></td>
+</tr>
+<tr>
+<td valign="TOP" colspan="2">
+<b><i><font size="4"></font></i></b><i></i><p><i><b><font size="4"><a name="m3">Выбор шрифта</a></font> </b></i></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>&lt;font&gt;</b></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman"></font><p><font face="Times New Roman">&lt;font&gt;...&lt;/font&gt; <br>
+Установка размера, цвета или гарнитуры заключенного в теги текста. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><i><br>
+color = <a href="http://imcs.dvfu.ru/struc/kmf/download/method/color.htm">цвет</a> </i><br>
+Установка цвета заключенного в теги текста. <i><br>
+Fase = список </i><br>
+Установка гарнитуры заключенного в теги текста (устанавливается первый из указанных в разделенном запятыми списке имен шрифтов). <i><br>
+Size = значение </i><br>
+Размер шрифта устанавливается равным заданному абсолютному значению (от 1 до 7) или относительно размера &lt;</font><i>basefont</i><font face="Times New Roman">&gt; с помощью значений +</font><i>n</i><font face="Times New Roman"> или -</font><i>n</i>. </p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;basefont&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman"></font><p><font face="Times New Roman">&lt;basefont&gt;...&lt;/basefont&gt; <br>
+Указывается размер шрифта для последующего текста. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><i><br>
+Size = значение </i><br>
+Установка размера базового шрифта. Диапазон - от 1 до 7. (Требуется; по умолчанию принимается значение 3). </font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>&lt;i&gt;</b></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman"></font><p><font face="Times New Roman">&lt;i&gt;...&lt;/i&gt; <br>
+Заключенный в теги текст будет отображаться в курсивном начертании.</font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;b&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman"></font><p><font face="Times New Roman">&lt;b&gt;...&lt;/b&gt; <br>
+Заключенный в теги текст будет отображаться жирным шрифтом. </font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;tt&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman"></font><p><font face="Times New Roman">&lt;tt&gt;...&lt;/tt&gt; <br>
+Заключенный в теги текст будет отображаться машинописным шрифтом. </font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;h<i>n</i>&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<p>&lt;h<i>n</i>&gt;...&lt;/h<i>n</i><font face="Times New Roman">&gt; <br>
+Заключенный в теги текст представляет собой заголовок уровня </font><i>n</i><font face="Times New Roman">. Возможные значения </font><i>n </i><font face="Times New Roman">- от 1 до 6. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><i><br>
+align = тип </i><br>
+Указывается способ выравнивания заголовка: по левому краю </font><i>(left</i><font face="Times New Roman">), центру(</font><i>center</i><font face="Times New Roman">) или правому краю (</font><i>right</i>). </p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;marquee&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<p>&lt;marquee&gt;...&lt;/marquee&gt; <i><font face="Times New Roman"><br>
+IE2 и выше</font></i><font face="Times New Roman">. Создается бегущая строка текста. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><i><br>
+align = позиция </i><br>
+Задается позиция бегущей строки по вертикали относительно текста, в котором она расположена: вверху (</font><i>top</i><font face="Times New Roman">), посередине (</font><i>middle</i><font face="Times New Roman">) или внизу (<i>bottom). <br>
+Behavior = стиль </i><br>
+Стиль бегущей строки определяется как <i>alternate</i>(меняет направление, дойдя до границы),
+ <i>scroll</i>(побуквенно исчезает дойдя до границы и также появляется с другой стороны) мнгновенно начинает движение снова)
+  или <i>slide</i>(дойдя до границы мнгновенно начинает движение снова). <i><br>
+Bgcolor = <a href="http://imcs.dvfu.ru/struc/kmf/download/method/color.htm">цвет</a> </i><br>
+Установка цвета фона бегущей строки. <i><br>
+Direction = направление </i><br>
+Задается направление прокрутки текста: влево (</font><i>left</i><font face="Times New Roman">) или вправо (</font><i>right</i>). <i><font face="Times New Roman"><br>
+Height = значение </font></i><font face="Times New Roman"><br>
+Задается высота (в пикселях) зоны бегущей строки. <i><br>
+Hspace = значение </i><br>
+Задается размещение слева и справа от бегущей строки областей свободного пространства (в пикселях). <i><br>
+Loop = значение </i><br>
+Установка числа повторов анимации бегущей строки; значение может быть целым или infinite. <i><br>
+Scrollamount = значение </i><br>
+Задается размер (в пикселях) области смещения текста при каждой операции прокрутки. <i><br>
+Scrolldelay = значение </i><br>
+Указывается задержка (в миллисекундах) между последовательными смещениями текста бегущей строки. <i><br>
+Vspace = значение </i><br>
+Задается размещение над бегущей строкой и под ней областей свободного пространства заданной высоты (в пикселях). <i><br>
+Width = значение </i><br>
+Задается ширина зоны бегущей строки (в пикселях). </font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;sub&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman"></font><p><font face="Times New Roman">&lt;sub&gt;...&lt;/sub&gt; <br>
+Заключенный в теги текст будет смещен вниз (нижний индекс). </font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;sup&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman"></font><p><font face="Times New Roman">&lt;sup&gt;...&lt;/sup&gt; <br>
+Заключенный в теги текст будет смещен вверх (верхний индекс). </font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;s&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman"></font><p><font face="Times New Roman">&lt;s&gt;...&lt;/s&gt; <br>
+Заключенный в теги текст будет отображаться перечеркнутым горизонтальной линией. </font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;strike&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman"></font><p><font face="Times New Roman">&lt;strike&gt;...&lt;/strike&gt; <br>
+Заключенный в теги текст будет перечеркнут горизонтальной линией. </font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;em&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman"></font><p><font face="Times New Roman">&lt;em&gt;...&lt;/em&gt; <br>
+Для заключенного в теги текста в качестве дополнительного параметра форматирования задается курсивное начертание. </font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;strong&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman"></font><p><font face="Times New Roman">&lt;strong&gt;...&lt;/strong&gt; <br>
+Для заключенного в теги текста в качестве дополнительного параметра форматирования задается жирное начертание. </font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;big&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman"></font><p><font face="Times New Roman">&lt;big&gt;...&lt;/big&gt; <br>
+Заключенный в теги текст будет отображаться шрифтом большего размера. </font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;small&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman"></font><p><font face="Times New Roman">&lt;small&gt;...&lt;/small&gt; <br>
+Заключенный в теги текст будет отображаться шрифтом меньшего размера.</font></p></td>
+</tr>
+<tr><td valign="TOP" colspan="2">
+<p>&nbsp; <b><i><font size="4"><a name="m4">Форматирование абзацев</a></font> </i></b></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;blockquote&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<p>&lt;blockquote&gt;...&lt;/blockquo<font face="Times New Roman">te&gt; <br>
+Заключенный в теги текст представляет собой блок цитаты. </font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;center&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman"></font><p><font face="Times New Roman">&lt;center&gt;...&lt;/center&gt; <br>
+Размещение заключенного в теги текста по центру. </font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;cite&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman"></font><p><font face="Times New Roman">&lt;cite&gt;...&lt;/cite&gt; <br>
+Заключенный в теги текст представляет собой цитату. </font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;code&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<p>&lt;code&gt;...&lt;/code&gt; <br>
+<font face="Times New Roman">Заключенный в теги текст представляет собой фрагмент кода. </font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;comment&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<p>&lt;comment&gt;...&lt;/comment&gt; <i><font face="Times New Roman"><br>
+IE2 и выше.</font></i><font face="Times New Roman"> Комментарий в тексте документа. Комментарии будут видимы в любом броузере. Для всех броузеров броузеров комментарии представляются в виде &lt;!--<i>текст комментария</i></font>--&gt;. </p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;dfn&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman"></font><p><font face="Times New Roman">&lt;dfn&gt;...&lt;/dfn&gt; <br>
+Заключенный в теги текст форматируется как определение. </font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;kbd&gt;</b></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman"></font><p><font face="Times New Roman">&lt;kbd&gt;...&lt;/kbd&gt; <br>
+Заключенный в теги текст выводится посимвольно (как при наборе с клавиатуры). </font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;multicol&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<p>&lt;multicol&gt;...&lt;/multicol&gt; <i><font face="Times New Roman"><br>
+Только N3. </font></i><font face="Times New Roman">Заключенные в теги код HTML и текст будут представлены в многостолбцовом формате. Текст и элементы будут распределяться в соответствии с указанным количеством столбцов так, чтобы элементы столбцов были приблизительно равной длинны. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b></font><i><br>
+cols = n </i><font face="Times New Roman"><br>
+Указывается количество столбцов. Этот атрибут является необходимым. </font><i><br>
+gutten = n </i><font face="Times New Roman"><br>
+Указывается расстояние (в пикселях) между столбцами. По умолчанию - 10 пикселей. </font><i><br>
+width = n </i><font face="Times New Roman"><br>
+Указывается ширина столбцов в пикселях. </font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;plaintext&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman"></font><p><font face="Times New Roman">&lt;plaintext&gt; <br>
+Указывается, что остальную часть документа следует отображать без обработки, как предварительно отформатированный текст. </font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;pre&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman"></font><p><font face="Times New Roman">&lt;pre&gt;...&lt;/pre&gt; <br>
+Заключенный в теги текст будет отображаться так, как он был отформатирован предварительно, без обработки, с точным соблюдением переносов строк и интервалов. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b></font><i><br>
+width = n </i><font face="Times New Roman"><br>
+Броузер будет размещать текст так, чтобы в строке умещалось (если возможно) n символов. </font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;samp&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman"></font><p><font face="Times New Roman">&lt;samp&gt;...&lt;/samp&gt; <br>
+Заключенный в теги текст представляет собой шаблон </font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b></b><p><b>&lt;span&gt;</b></p></td>
+<td width="75%" valign="TOP">
+<p>&lt;span&gt;...&lt;/span&gt; <i><font face="Times New Roman"><br>
+Только I</font>E3</i><font face="Times New Roman">. Заключенный в теги текст будет форматироваться с использованием таблицы стилей. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><i><br>
+style = элементы </i><br>
+Для текста в заданном интервале задаются элементы таблицы стилей. </font></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;var&gt;</b></td>
+<td width="75%" valign="TOP">
+&lt;var&gt;...&lt;/var&gt; <br>
+Заключенный в теги текст представляет собой имя переменной. </td>
+</tr>
+<tr><td valign="TOP" colspan="2">
+<b><i><font size="4"></font></i></b><i></i><p><i><b><font size="4"><a name="m5">Списки</a> </font></b></i></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;ol&gt;</b></td>
+<td width="75%" valign="TOP">
+&lt;ol&gt;...&lt;/ol&gt; <br>
+Начальный и конечный теги упорядоченного списка, содержащего пронумерованного (в порядке возрастания) элементы &lt;li&gt;. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><i><br>
+compact </i><font face="Times New Roman"><br>
+Список будет представлен в более компактном виде. </font><i><br>
+Start = n </i><font face="Times New Roman"><br>
+Список будет пронумерован начиная не со значения 1 (по умолчанию), а со значения <i>n. <br>
+Type = формат </i><br>
+Установка формата нумерации данного списка: A (прописные буквы), a (строчные буквы), I (большие римские цифры), i (маленькие римские цифры), 1 (арабские цифры; по умолчанию). </font></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;ul&gt;</b></td>
+<td width="75%" valign="TOP">
+&lt;ul&gt;...&lt;/ul&gt; <br>
+Начальный и конечный теги неупорядоченного списка помеченных элементов &lt;li&gt;.
+<b><br><font size="-1"><b>Атрибуты</b></font> </b>
+<i><br>
+compact </i><font face="Times New Roman"><br>
+Список будет представлен в более компактном виде. <i><br>
+Type = формат <br>
+N2 и выше.</i> Задается стиль меток для данного списка: circle (кружок), disk(диск; по умолчанию) или square (квадрат). </font></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>&lt;dir&gt;</b></td>
+<td width="75%" valign="TOP">
+&lt;dir&gt;...&lt;/dir&gt; <br>
+Создание списка каталогов, содержащего теги &lt;li&gt;. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><i><br>
+compact </i><br>
+Список делается по возможности более компактным. </td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>&lt;li&gt;</b></td>
+<td width="75%" valign="TOP">
+&lt;li&gt;...&lt;/li&gt; <br>
+Начальный и конечный теги, ограничивающие элемент списка. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><i><br>
+Type = формат </i><br>
+Тип данного элемента списка устанавливается в соответствии с заданным форматом. Для элемента &lt;<i>li</i><font face="Times New Roman">&gt; в упорядоченном списке &lt;</font><i>ol</i><font face="Times New Roman">&gt;: A (прописные буквы), a (строчные буквы), I (большие римские цифры), i (маленькие римские цифры), 1 (арабские цифры; по умолчанию). Для элемента &lt;</font><i>li</i><font face="Times New Roman">&gt; в неупорядоченном списке &lt;</font><i>ul</i>&gt;: <i>circle</i><font face="Times New Roman"> (кружок), </font><i>disk </i><font face="Times New Roman">(диск; по умолчанию) или </font><i>square</i><font face="Times New Roman"> (квадрат). </font><i><br>
+Value = n </i><br>
+Номер данного элемента списка устанавливается равным <i>n</i>. </td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>&lt;menu&gt;</b></td>
+<td width="75%" valign="TOP">
+&lt;menu&gt;...&lt;/menu&gt; <br>
+Задается список меню, содержащий теги &lt;li&gt;. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><i><br>
+compact </i><br>
+Список делается по возможности более компактным. </td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;dl&gt;</b></td>
+<td width="75%" valign="TOP">
+&lt;dl&gt;...&lt;/dl&gt; <br>
+Создание списка определений, содержащих теги &lt;dt&gt; и &lt;dd&gt;. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><i><br>
+compact </i><br>
+Список делается по возможности более компактным. </td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;dt&gt;</b></td>
+<td width="75%" valign="TOP">
+&lt;dt&gt;...&lt;/dt&gt; <br>
+Задается описательно - условная часть для элемента списка определений. </td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;dd&gt;</b></td>
+<td width="75%" valign="TOP">
+&lt;dd&gt;...&lt;/dd&gt; <br>
+Задается описательная часть для элемента списка определений.</td>
+</tr>
+<tr><td valign="TOP" colspan="2">
+<b><i><font size="4"><a name="m6">Организация ссылок</a></font></i></b>
+ </td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>&lt;a&gt;</b></td>
+<td width="75%" valign="TOP">
+&lt;a&gt;...&lt;/a&gt; <br>
+В документе создается гиперссылка (атрибут href) или идентификатор фрагмента (атрибут name). <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><i><br>
+href = url </i><br>
+Указывается URL целевого документа гиперссылки (необходим, если это не якорь имени). <i><br>
+Method = список </i><br>
+Задается список методов отображения, зависящих от броузера (через запятую). <i><br>
+Name = строка </i><br>
+Указывается имя идентификатора фрагмента (необходим, если это якорь гипертекстовой ссылки). <i><br>
+Rel = связь </i><br>
+Определяется связь этого документа с целевым документом. 
+<i><br>Rev = связь </i><br>
+Определяется обратная связь целевого документа с данным. <i><br>
+Target = имя </i><br>
+Задается имя кадра или окна для отображения обозначенного ссылкой документа. <i><br>
+Title = строка </i><br>
+Задается заголовок целевого документа. <i><br>
+Urn = urn </i><br>
+Указывается не зависящее от места нахождения универсальное имя ресурса для данной гиперссылки. </td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>&lt;link&gt;</b></td>
+<td width="75%" valign="TOP">
+&lt;link&gt; <br>
+В заголовке (&lt;head&gt;) документа определяется ссылка из данного документа на другой документ. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><br>
+<i>href = url </i><br>
+Указывается URL гипертекстовой ссылки целевого документа. <i><br>
+Method = список </i><br>
+Указывается (через запятую) список зависящих от броузера методов отображения для данной ссылки. <i><br>
+Rel = связь </i><br>
+Определяется связь этого документа с целевым документом. Для <i>IE3.0</i>
+ rel = style означает существование внешней таблицы стилей. <i><br>
+Rev = связь </i><br>
+Определение обратной связи целевого документа с данным. <i><br>
+Scr = url <br>
+Только в IE3</i>. Указывается URL внешней таблицы стилей, которая будет использоваться для форматирования документа. <i><br>
+Title = строка </i><br>
+Задается заголовок целевого документа. <i><br>
+Type = text/css <br>
+Только в IE3</i>. Задается тип внешней ссылки, которая будет использоваться как внешняя каскадная таблица стилей.<i><br>
+Urn = urn </i><br>
+Для целевого документа указывается универсальное имя ресурса, не зависящее от его места нахождения. </td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>&lt;base&gt;</b></td>
+<td width="75%" valign="TOP">
+&lt;base&gt;...&lt;/base&gt; <br>
+Указывается базовый URL для всех относительных URL в данном документе. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><i><br>
+href = url </i><br>
+Указывается базовый URL. <i><br>
+Target = имя </i><br>
+Задается использующееся по умолчанию целевое окно для всех ссылок &lt;a&gt; в документе. Предназначен в основном для переадресации ссылки в другие кадры. Существует четыре специальных значения: _<i>blank</i>, _<i>parent</i>, _<i>self</i> и _<i>top</i>.</td>
+</tr>
+<tr><td valign="TOP" colspan="2">
+<b><i><font size="4"></font></i></b><i></i><p><i><b><font size="4"><a name="m7">Изображения </a></font></b></i></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>&lt;img&gt;</b></td>
+<td width="75%" valign="TOP">
+&lt;img&gt; ... &lt;/img&gt; <br>
+В текущий текстовый поток вставляется изображение. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><i><br>
+alt = текст </i><br>
+Задается альтернативный текст для броузеров, не поддерживающих работу с изображениями. <i><br>
+Border = n </i><br>
+Установка толщины (в пикселях) обрамления изображений, содержащихся в гиперссылках. <i><br>
+Controls <br>
+IE2 и выше.</i> Добавление функций управления воспроизведением встроенных видео клипов. <i><br>
+Dynscr = url <br>
+IE2 и выше</i>. Задается URL видеоклипа, подлежащего отображению. <i><br>
+Height = n </i><br>
+Задается высота изображения в пикселях. <i><br>
+Hspace = n </i><br>
+Задается размещение слева и справа от изображения областей свободного пространства шириной по n пикселей. <i><br>
+Ismap </i><br>
+Указывается, что при использовании данного тега внутри тега &lt;a&gt; изображение выбирается с помощью мыши. <i><br>
+Loop = значение <br>
+IE2 и выше</i>. Установка числа повторов воспроизведения видео. Значение может быть целым или infinite (бесконечность). <i><br>
+Lowscr = url <br>
+NE2 и выше</i>. Указывается изображение с низким разрешением, которое броузер должен загрузить первым. За ним следует изображение, заданное атрибутом &lt;<i>scr</i>&gt;. <i><br>
+Scr = url </i><br>
+Указывается исходный URL изображения, подлежащего воспроизведению. Этот атрибут необходим. <i><br>
+Start = начало <br>
+IE2 и выше.</i> Указывается, когда следует воспроизвести видео клип (варианты: <i>fileopen</i>
+ или <i>mouseover</i>).<i><br>
+Usemap = url </i><br>
+Указывается чувствительная к перемещению мыши область изображения. <i><br>
+vspace = n </i><br>
+Задается размещение над и под изображением областей свободного пространства высотой по <i>n</i> пикселей. <i><br>
+Width = n </i><br>
+Задается ширина изображения в пикселях.</td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>&lt;map&gt;</b></td>
+<td width="75%" valign="TOP">
+<i>&lt;map&gt;...&lt;/map&gt; </i><br>
+Определить чувствительную к перемещению мыши область изображения. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><br>
+name = строка <br>
+Задается имя данной области. Этот атрибут является обязательным. </td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;area&gt;</b></td>
+<td width="75%" valign="TOP">
+&lt;<i>area</i>&gt; <br>
+Задается чувствительная к перемещению мыши область изображения на стороне клиента. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><i><br>
+coord=список </i><br>
+Указывается через запятую список зависящих от формы зоны координат, которые определяют ее границы. <i><br>
+Href=url </i><br>
+Указывается URL, связанного с данной зоной целевого документа гиперссылки.<i><br>
+Noref </i><br>
+Указывается, что с данной зоной никакой документ не связан; щелчок кнопкой мыши в этой зоне никакого результата не дает. <i><br>
+Shape = форма </i><br>
+Задается форма зоны. Варианты:
+<i> circ, circle, poly, polygon, rect, rectangle.</i></td>
+</tr>
+<tr><td valign="TOP" colspan="2">
+<b><i><font size="4"><a name="m8">Таблицы</a></font> </i></b></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;table&gt;</b></td>
+<td width="75%" valign="TOP">
+<i>
+&lt;table&gt;...&lt;/table&gt; </i><br>
+начальный и конечный теги таблицы. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><i><br>
+align = тип </i><br>
+Задается способ выравнивания таблицы относительно текстового потока, в котором она находится: по левому (left) или правому краю (right). <i><br>
+Backgroud = url </i><br>
+Указывается фоновое изображение для таблицы. <i><br>
+Bgcolor = <a href="http://imcs.dvfu.ru/struc/kmf/download/method/color.htm">цвет</a> <br>
+N3, IE2 и выше. </i>Задается цвет фона всей таблицы. <i><br>
+Border = n </i><br>
+Будет создано обрамление, образованное линиями толщиной <i>n </i>пикселей.<i><br>
+Bordercolor</i> = <i>цвет <br>
+IE2 и выше. </i>Задается цвет обрамления всей таблицы.<i><br>
+Bordercolordark</i> = <i>цвет <br>
+IE2 и выше. </i>Задается темный цвет для создания эффекта тени рамки.<i><br>
+Bordercolorlight</i> = <i>цвет <br>
+IE2 и выше. </i>Задается светлый цвет для создания эффекта тени рамки. <i><br>
+Cellpadding = n </i><br>
+Между границами ячейки и ее содержимым поместить область свободного пространства шириной
+<i>n</i> пикселей. <i><br>
+Cellspacing = n </i><br>
+Задается интервал между ячейками таблицы размером в <i>n</i> пикселей. &gt;<i><br>
+Frame = [void/above/below/hsides/lhs/rhs/vsides/ <br>
+box/border] <br>
+Только IE3. </i>Указывается способ отображения рамки таблицы:
+ void - подавление отображения всей рамки таблицы; border - отображение всей рамки;
+ <i>hsides - </i>отображение горизонтальных составляющих рамки, а <i>vsides - </i>
+ вертикальных;<i> lhs - </i>отображение левой боковой стороны рамки, а <i>rhs - </i>правой.
+ <i><br>
+Hspace = n </i><br>
+Задается размещение слева и справа от таблицы областей свободного пространства шириной n
+пикселей. <i><br>
+Rules=[all/cols/groups/none/rows] <br>
+Только IE3.</i> Выключение<i> (none) </i>или включение режима отображения разграничительных
+ линий между ячейками таблицы: по столбцам (<i>cols), </i>строкам <i>(rows), </i>группам
+ (<i>groups) </i> или всем элементам(<i>all</i>). <i><br>
+Vspace = n </i><br>
+Задается размещение над и под таблицей областей свободного пространства высотой n пикселей.<i><br>
+Width=n </i><br>
+Установка ширины таблицы в пикселях или процентах от ширины окна. </td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;caption&gt;</b></td>
+<td width="75%" valign="TOP">
+<i>
+&lt;caption&gt;...&lt;/caption&gt; </i><br>
+Задается заголовок таблицы. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><br>
+align=позиция <br>
+В <i>Netscape Navigator</i> - установка размещения заголовка по вертикали (<i>top </i>или <i>bottom). </i>По умолчанию - размещение сверху (<i>top), </i><font face="Times New Roman">по центру. В </font><i>IE - </i><font face="Times New Roman">выравнивание заголовка по горизонтали (</font><i>left, center </i><font face="Times New Roman">или</font><i> right) </i><font face="Times New Roman">либо установка размещения заголовка по вертикали (</font><i>top </i><font face="Times New Roman">или </font><i>bottom). </i><font face="Times New Roman">По умолчанию - размещение сверху (</font><i>top), </i><font face="Times New Roman">по центру.
+С помощью однго данного атрибута задать размещение и по вертикали и по горизонтали нельзя. <i><br>
+Vline=позиция <br>
+IE2 и выше. </i>Установка способа размещения заголовка по вертикали (<i>top </i>или <i>bottom). </i>
+В <i>Internet Explorer, </i>используя этот атрибут совместно с align, можно задать способ
+ размещения заголовка и по вертикали и по горизонтали<i>. </i></font></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;col&gt;</b></td>
+<td width="75%" valign="TOP">
+&lt;<i>col</i>&gt; <i><br>
+IE2 и выше. </i>Установка параметров столбца (или столбцов) в <i>&lt;colgroup&gt;</i>
+ таблицы. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><i><br>
+align = значение </i><br>
+Задается способ выравнивания текста в ячейках столбца. Возможные варианты:
+ <i>center, left, right. <br>
+Span=n </i><br>
+Указывается число столбцов, на которые должно распространяться действие установок &lt;
+<i>col</i>&gt;.</td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;colgroup&gt;</b></td>
+<td width="75%" valign="TOP">
+<i>
+&lt;colgroup&gt; <br>
+IE2 и выше. </i>Установка свойств обозначенного столбца (или столбцов) в таблице.
+ Кроме того, задается местоположение вертикальных разграничительных линий таблицы,
+ если в теге &lt;<i>table</i>&gt; установлен атрибут <i>rules = groups. </i><b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><i><br>
+align = значение </i><br>
+Задается способ выравнивания текста в ячейках столбцов в &lt;<i>colgroup</i>&gt; Возможные значение:
+<i>center, left, right. <br>
+Span=n </i><br>
+Указывается число столбцов в &lt;<i>colgroup</i>&gt;.</td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;tbody&gt;</b></td>
+<td width="75%" valign="TOP">
+<i>
+&lt;tbody&gt;
+<br>IE2 и выше. </i>Начальный тег для строк таблицы, образующих основное тело таблицы.
+ Наличие конечного тега не требуется. Используется для указания места расположения
+  разграничительных линий, если в теге &lt;<i>table&gt;</i> задан атрибут
+  <i>rules</i> =<i> groups.</i></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;td&gt;</b></td>
+<td width="75%" valign="TOP">
+<i>
+&lt;td&gt;...&lt;/td&gt; </i><br>
+Начальный и конечный теги ячейки данных таблицы. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><i><br>
+align = значение </i><br>
+Задается способ выравнивания содержимого ячейки: по левому краю (<i>left</i><font face="Times New Roman">), центру(</font><i>center</i><font face="Times New Roman">), или правому краю (</font><i>right</i>). <i><br>
+Backgroud = url </i><font face="Times New Roman"><br>
+Указывается фоновое изображение для ячейки. <i><br>
+Bgcolor = <a href="http://imcs.dvfu.ru/struc/kmf/download/method/color.htm">цвет</a> <br>
+N3, IE2 и выше. </i>Задается цвет фона ячейки. </font><i><br>
+Bordercolor</i> = <i><font face="Times New Roman">цвет <br>
+IE2 и выше. </font></i><font face="Times New Roman">Задается цвет обрамления ячейки. </font><i><br>
+Bordercolordark</i> = <i><font face="Times New Roman">цвет <br>
+IE2 и выше. </font></i><font face="Times New Roman">Задается темный цвет для создания эффекта тени обрамления ячейки. </font><i><br>
+Bordercolorlight</i> = <i><font face="Times New Roman">цвет <br>
+IE2 и выше. </font></i><font face="Times New Roman">Задается светлый цвет для создания эффекта тени обрамления ячейки. </font><i><br>
+Colspan = n </i><font face="Times New Roman"><br>
+Данная ячейка охватывает </font><i>n</i><font face="Times New Roman"> соседних столбцов. </font><i><br>
+Nowarp </i><font face="Times New Roman"><br>
+При указании этого атрибута отключается режим автоматического распределения текста по всей ячейке. Будет отображаться лишь та часть текста, которая умещается в ячейке по длине. </font><i><br>
+Rowspan = n </i><font face="Times New Roman"><br>
+Данная ячейка охватывает </font><i>n</i><font face="Times New Roman"> соседних строк. <i><br>
+Valign = значение </i><br>
+Задается способ выравнивания содержимого данной ячейки по вертикали: сверху (</font><i>top)</i><font face="Times New Roman">, по центру(</font><i>center)</i><font face="Times New Roman">, внизу(</font><i>bottom) </i><font face="Times New Roman">или по базовой линии (</font><i>baseline)</i><font face="Times New Roman"> ячейки. </font><i><br>
+Width=n </i><font face="Times New Roman"><br>
+Задается ширина ячейки в пикселях или процентах от ширины таблицы. </font></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;tfoot&gt;</b></td>
+<td width="75%" valign="TOP">
+<i><font face="Times New Roman">&lt;tfoot&gt;...&lt;/tfoot&gt; <br>
+IE2 и выше. </font></i><font face="Times New Roman">Начальный тег для строк образующих нижний колонтитул таблицы. Наличие конечного тега не требуется. Используется для указания места расположения разграничительных линий, если в теге &lt;</font><i>table&gt;</i><font face="Times New Roman"> задан атрибут rules =</font><i> groups. </i></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;th&gt;</b></td>
+<td width="75%" valign="TOP">
+<i>
+&lt;th&gt;...&lt;/th&gt; </i><font face="Times New Roman"><br>
+Начальный и конечный теги ячейки заголовка таблицы. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><i><br>
+align = тип </i><br>
+Задается способ выравнивания содержимого ячейки: по левому краю (left), центру(center), или правому краю (right). </font><i><br>
+Background = url </i><font face="Times New Roman"><br>
+Задается фоновое изображение для ячейки. <i><br>
+Bgcolor = <a href="http://imcs.dvfu.ru/struc/kmf/download/method/color.htm">цвет</a> <br>
+N3, IE2 и выше. </i>Задается цвет фона ячейки. </font><i><br>
+Bordercolor</i> = <i><font face="Times New Roman">цвет <br>
+IE2 и выше. </font></i><font face="Times New Roman">Задается цвет обрамления ячейки. </font><i><br>
+Bordercolordark</i> = <i><font face="Times New Roman">цвет <br>
+IE2 и выше. </font></i><font face="Times New Roman">Задается темный цвет для создания эффекта тени обрамления ячейки. </font><i><br>
+Bordercolorlight</i> = <i><font face="Times New Roman">цвет <br>
+IE2 и выше. </font></i><font face="Times New Roman">Задается светлый цвет для создания эффекта тени обрамления ячейки. </font><i><br>
+Colspan = n </i><font face="Times New Roman"><br>
+Данная ячейка охватывает </font><i>n</i><font face="Times New Roman"> соседних столбцов. </font><i><br>
+Nowarp </i><font face="Times New Roman"><br>
+При указании этого атрибута отключается режим автоматического распределения текста по всей ячейке. Будет отображаться лишь та часть текста, которая умещается в ячейке по длине. </font><i><br>
+Rowspan = n </i><font face="Times New Roman"><br>
+Данная ячейка охватывает </font><i>n</i><font face="Times New Roman"> соседних строк. <i><br>
+Valign = тип </i><br>
+Задается размещение содержимого ячейки по вертикали: сверху (</font><i>top)</i><font face="Times New Roman">, по центру (</font><i>center)</i><font face="Times New Roman">, внизу (</font><i>bottom) </i><font face="Times New Roman">или по базовой линии (</font><i>baseline)</i><font face="Times New Roman"> ячейки.</font><i> Width = n </i><font face="Times New Roman"><br>
+Задается ширина ячейки в пикселях или процентах от ширины таблицы. </font></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;thead&gt;</b></td>
+<td width="75%" valign="TOP">
+
+&lt;thead&gt; <i><font face="Times New Roman"><br>
+IE2 и выше. </font></i><font face="Times New Roman">Начальный тег для строк образующих заголовок таблицы. Используется для указания места расположения разграничительных линий, если в теге &lt;</font><i>table&gt;</i><font face="Times New Roman"> задан атрибут rules =</font><i> groups. </i></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;tr&gt;</b></td>
+<td width="75%" valign="TOP">
+<font face="Times New Roman">
+&lt;tr&gt;...&lt;/tr&gt; <br>
+Начальный и конечный теги строки ячеек в таблице. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><i><br>
+align = значение </i><br>
+Задается способ выравнивания содержимого ячейки в данной строке: по левому краю (left), центру(center), или правому краю (right). </font><i><br>
+Background = url </i><font face="Times New Roman"><br>
+Указывается фоновое изображение для строки. <i><br>
+Bgcolor = <a href="http://imcs.dvfu.ru/struc/kmf/download/method/color.htm">цвет</a> <br>
+N3, IE2 и выше. </i>Задается цвет фона данной строки. </font><i><br>
+Border=n </i><font face="Times New Roman"><br>
+Создается обрамление, образованное линиями толщиной </font><i>n </i><font face="Times New Roman">пикселей. </font><i><br>
+Bordercolor</i> = <i><font face="Times New Roman">цвет <br>
+IE2 и выше. </font></i><font face="Times New Roman">Задается цвет обрамления строки. </font><i><br>
+Bordercolordark</i> = <i><font face="Times New Roman">цвет <br>
+IE2 и выше. </font></i><font face="Times New Roman">Задается темный цвет для создания эффекта тени обрамления строки. </font><i><br>
+Bordercolorlight</i> = <i><font face="Times New Roman">цвет <br>
+IE2 и выше. </font></i><font face="Times New Roman">Задается светлый цвет для создания эффекта тени обрамления строки. <i><br>
+Valign = значение </i><br>
+Задается размещение содержимого ячейки в данной строке по вертикали: сверху (</font><i>top)</i><font face="Times New Roman">, по центру (</font><i>center)</i><font face="Times New Roman">, внизу (</font><i>bottom) </i><font face="Times New Roman">или по базовой линии (</font><i>baseline)</i><font face="Times New Roman"> ячейки.</font></td>
+</tr>
+<tr><td valign="TOP" colspan="2">
+<b><i><font face="Times New Roman" size="4"></font></i></b><i></i><p><i><b><font face="Times New Roman" size="4"><a name="m9">Кадры</a></font> </b></i></p></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;frameset&gt;</b></td>
+<td width="75%" valign="TOP">
+<i>
+&lt;frameset&gt;...&lt;/frameset&gt; </i><br>
+<font face="Times New Roman">Начальный и конечный теги набора кадров. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><i><br>
+Border=n <br>
+Только в N3. </i>Создается обрамление, образованное линиями толщиной </font><i>n </i><font face="Times New Roman">пикселей. По умолчанию толщина линий обрамления равна 5 пикселям. </font><i><br>
+Bordercolor</i> = <i><font face="Times New Roman">цвет <br>
+Только в N3. </font></i><font face="Times New Roman">Установка цвета обрамления для набора кадров. <i><br>
+Cols = список </i><br>
+Указание количества и ширины кадров в наборе. <i><br>
+Frameborder=[1/0]. <br>
+Только в IE3.</i> Включение или выключение отображения трехмерного обрамления кадров в наборе. По умолчанию - 1 (включено). Значение 0 выключает обрамление. </font><i><br>
+<font face="Times New Roman">frameborder=[yes/no] <br>
+IE2 и выше.</font></i><font face="Times New Roman"> Включение или выключение отображения трехмерного обрамления кадра или обычной рамки. По умолчанию - </font><i>yes</i><font face="Times New Roman"> (для трехмерного обрамления). <i><br>
+Framespacing=n <br>
+Только в IE3. </i>Указывается, что между смежными кадрами должен быть промежуток, и задается его размер в пикселях. <i><br>
+rows = список </i><br>
+Указание количества и высоты кадров в наборе. </font></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;frame&gt;</b></td>
+<td width="75%" valign="TOP">
+<i></i><p><i>&lt;frame&gt;...&lt;/frame&gt; </i><font face="Times New Roman"><br>
+Задается кадр в наборе кадров. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b></font><i><br>
+Bordercolor</i> = <i><font face="Times New Roman">цвет <br>
+IE2 и выше. </font></i><font face="Times New Roman">Установка цвета обрамления кадра, если обрамление включено атрибутом frameborder = yes. <br>
+frameborder=[1/0]. <i><br>
+Только в IE3</i>. Включение или выключение отображения трехмерного обрамления кадра. По умолчанию - 1, т.е. вставляется обрамление. Значение 0 выключает обрамление. <br>
+frameborder=[yes/no] <i><br>
+IE2 и выше.</i> Включение или выключение отображения трехмерного обрамления кадра или обычной рамки. По умолчанию - yes (для трехмерного обрамления). </font><i><br>
+Marginheight=n </i><font face="Times New Roman"><br>
+Задается размещение над содержимым кадра и под ним областей свободного пространства высотой по </font><i>n</i><font face="Times New Roman"> пикселей. </font><i><br>
+Marginwidth=n </i><font face="Times New Roman"><br>
+Задается размещение слева и справа от содержимого кадра областей свободного пространства шириной по </font><i>n</i><font face="Times New Roman"> пикселей. <i><br>
+Name=строка </i><br>
+Задается имя кадра. </font><i><br>
+Noresize </i><font face="Times New Roman"><br>
+Пользователю запрещается изменять размеры кадра. <i><br>
+Scrolling=тип </i><br>
+Линейки прокрутки будут добавляться всегда (</font><i>yes</i><font face="Times New Roman">), не будут добавляться (</font><i>no</i><font face="Times New Roman">), если необходимо (</font><i>auto</i>). <i><br>
+Scr=url </i><font face="Times New Roman"><br>
+Задается URL исходного документа для данного кадра. </font></p></td>
+</tr>
+
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;noframes&gt;</b></td>
+<td width="75%" valign="TOP">
+<i>
+&lt;noframes&gt;...&lt;/noframes&gt; </i><br>
+Определяется содержимое, которое будет отображаться броузерами, не поддерживающими кадры.</td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;iframes&gt;</b></td>
+<td width="75%" valign="TOP">
+<i>
+&lt;iframes&gt;...&lt;/iframes&gt; <br>
+Только в IE3.</i> В документе определяется “плавающий” кадр, который аналогичным образом будет размещен в &lt;<i>img</i>&gt;. Для этого элемента требуется закрывающий тег. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><i><br>
+align = тип </i><br>
+Задается способ размещения или выравнивания “плавающего” кадра таблицы относительно текста строки. Возможные значения: top, middle, bottom (по умолчанию), left, right. <i><br>
+Frameborder = [1/0]. </i><br>
+Включение или выключение отображения трехмерного обрамления кадров в наборе. По умолчанию - 1 (включено). Значение 0 выключает обрамление.<i><br>
+Height = n </i><br>
+Указание высоты кадра в пикселях или в процентах от высоты окна. <i><br>
+Hspace = n </i><br>
+Задается размещение слева и справа от изображения областей свободного пространства шириной по n пикселей. <i><br>
+Marginheight = n </i><br>
+Задается размещение над содержимым кадра и под ним областей свободного пространства высотой по <i>n</i> пикселей. <i><br>
+Marginwidth = n </i><br>
+Задается размещение слева и справа от содержимого кадра областей свободного пространства шириной по <i>n</i>пикселей. <i><br>
+Name=строка </i><br>
+Задается имя кадра.<i><br>
+Noresize </i>&gt;<br>
+Пользователю запрещается изменять размеры кадра. <i><br>
+Scrolling=тип </i><br>
+Линейки прокрутки будут добавляться всегда (<i>yes</i>), не будут добавляться (<i>no</i>), если необходимо (<i>auto</i>). <i><br>
+Scr=url </i><br>
+Задается URL исходного документа для данного кадра.<i><br>
+vspace = n </i><br>
+Задается размещение над изображением и под ним областей свободного пространства высотой по n пикселей. <i><br>
+Width = n </i><br>
+Задается ширина кадра в пикселях или процентах от размера окна.</td>
+</tr>
+<tr><td valign="TOP" colspan="2">
+<b><i><font size="4"><a name="m10">Формы</a></font> </i></b></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;form&gt;</b></td>
+<td width="75%" valign="TOP">
+<i>
+&lt;form&gt;...&lt;/form&gt; </i><font face="Times New Roman"><br>
+Начальный и конечный теги формы. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b></font><i><br>
+action = url </i><font face="Times New Roman"><br>
+Указывается URL приложения, предназначенного для обработки формы. По умолчанию используется текущий URL. <i><br>
+enctype = кодирование </i><br>
+Задается способ кодирования значений элементов формы. <i><br>
+method = стиль </i><br>
+Указывается метод передачи параметров (</font><i>get</i><font face="Times New Roman"> или </font><i>post</i><font face="Times New Roman">). По умолчанию используется </font><i>post</i>. <i><font face="Times New Roman"><br>
+Target = имя <br>
+Только в IE3.</font></i><font face="Times New Roman"> Задается целевое окно для загрузки результатов заполнения формы. Можно использовать специальные <font size="-1"><b>Атрибуты</b></font> </font><i>_bottom, _top, _parent, _self. </i></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;input&gt;</b></td>
+<td width="75%" valign="TOP">
+<i>
+&lt;input type=checkbox&gt; </i><font face="Times New Roman"><br>
+В &lt;form&gt; создается элемент ввода “опция”. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b></font><i><br>
+checked </i><font face="Times New Roman"><br>
+Элемент отображается как выбранный по умолчанию. <i><br>
+name=строка </i><br>
+Указывается имя параметра, который будет передан в приложение обработки форм при выборе данного элемента ввода. Этот атрибут является необходимым. <i><br>
+value=строка </i><br>
+Указывается значение параметра, посылаемого в приложение обработки форм при выборе данного элемента ввода. Этот атрибут является необходимым. </font></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;input&gt;</b></td>
+<td width="75%" valign="TOP">
+<i>
+&lt;input type=file&gt; </i><font face="Times New Roman"><br>
+В &lt;form&gt; создается элемент ввода “выбор файла”. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b></font><i><br>
+maxlength=n </i><font face="Times New Roman"><br>
+Для данного элемента указывается максимальное количество вводимых символов. <i><br>
+name=строка </i><br>
+Указывается имя параметра, который будет передан в приложение обработки форм при выборе данного элемента ввода. Этот атрибут является необходимым. </font><i><br>
+Size=n </i><font face="Times New Roman"><br>
+Для данного элемента указывается количество отображаемых символов. </font></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;input&gt;</b></td>
+<td width="75%" valign="TOP">
+<i>
+&lt;input type=hidden&gt; </i><font face="Times New Roman"><br>
+В &lt;form&gt; создается скрытый элемент. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b></font><i><br>
+maxlength=n </i><font face="Times New Roman"><br>
+Для данного элемента указывается максимальное количество вводимых символов. <i><br>
+name=строка </i><br>
+Указывается имя параметра, который будет передан в приложение обработки форм при выборе данного элемента ввода. Этот атрибут является необходимым. </font><i><br>
+Size=n </i><font face="Times New Roman"><br>
+Для данного элемента указывается количество отображаемых символов. <i><br>
+value=строка </i><br>
+Указывается значение параметра, передаваемого в приложение обработки форм. </font></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;input&gt;</b></td>
+<td width="75%" valign="TOP">
+<i>
+&lt;input type=image&gt; </i><font face="Times New Roman"><br>
+В &lt;form&gt; создается элемент “изображение”. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><i><br>
+align = тип </i><br>
+Задается способ выравнивания изображения по вертикали относительно текста данного элемента формы. Возможные значения: top, middle, bottom <i><br>
+name=строка </i><br>
+Указывается имя параметра, который будет передан в приложение обработки форм при выборе данного элемента ввода. Этот атрибут является необходимым. </font><i><br>
+Scr = url </i><font face="Times New Roman"><br>
+Указывается исходный URL изображения. Этот атрибут необходим. </font></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;input&gt;</b></td>
+<td width="75%" valign="TOP">
+<i>
+&lt;input type=password&gt; </i><font face="Times New Roman"><br>
+В &lt;form&gt; создается элемент ввода текста с обеспечением защиты содержимого. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b></font><i><br>
+maxlength=n </i><font face="Times New Roman"><br>
+Для данного элемента указывается максимальное количество вводимых символов. <i><br>
+name=строка </i><br>
+Указывается имя параметра, который будет передан в приложение обработки форм при выборе данного элемента ввода. Этот атрибут является необходимым. </font><i><br>
+Size=n </i><font face="Times New Roman"><br>
+Для данного элемента указывается количество отображаемых символов. <i><br>
+value=строка </i><br>
+Задается исходное значение данного элемента. </font></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;input&gt;</b></td>
+<td width="75%" valign="TOP">
+<i>
+&lt;input type=ratio&gt; </i><font face="Times New Roman"><br>
+В &lt;form&gt; создается элемент ввода “селекторная кнопка”. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b></font><i><br>
+checked </i><font face="Times New Roman"><br>
+Элемент отображается как выбранный по умолчанию. <i><br>
+name=строка </i><br>
+Указывается имя параметра, который будет передан в приложение обработки форм при выборе данного элемента ввода. Этот атрибут является необходимым. <i><br>
+value=строка </i><br>
+Указывается значение параметра, посылаемого в приложение обработки форм при выборе данного элемента ввода. Этот атрибут является необходимым. </font></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;input&gt;</b></td>
+<td width="75%" valign="TOP">
+<i>
+&lt;input type=reset&gt; </i><font face="Times New Roman"><br>
+В &lt;form&gt; создается кнопка сброса. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><i><br>
+value=строка </i><br>
+Указывается надпись для кнопки сброса. </font></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;input&gt;</b></td>
+<td width="75%" valign="TOP">
+<i>
+&lt;input type=submit&gt; </i><font face="Times New Roman"><br>
+В &lt;form&gt; создается кнопка передачи. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b><i><br>
+name=строка </i><br>
+Указывается имя параметра, который будет передан в приложение обработки форм при выборе данного элемента ввода. Этот атрибут является необходимым. <i><br>
+value=строка </i><br>
+Указывается надпись для кнопки передачи, а также значение параметра, посылаемого в приложение обработки форм при щелчке на этой кнопке. </font></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;input&gt;</b></td>
+<td width="75%" valign="TOP">
+<i>
+&lt;input type=text&gt; </i><font face="Times New Roman"><br>
+В &lt;form&gt; создается элемент ввода текста. <b><br>
+<font size="-1"><b>Атрибуты</b></font> </b></font><i><br>
+maxlength=n </i><font face="Times New Roman"><br>
+Для данного элемента указывается максимальное количество вводимых символов. </font><i><br>
+na<font face="Times New Roman">me=строка </font></i><font face="Times New Roman"><br>
+Указывается имя параметра, который передается в приложение обработки форм для данного элемента ввода. Этот атрибут является необходимым. </font><i><br>
+Size=n </i><font face="Times New Roman"><br>
+Для данного элемента указывается количество отображаемых символов. <i><br>
+value=строка </i><br>
+Задается исходное значение данного элемента. </font></td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;option&gt;</b></td>
+<td width="75%" valign="TOP">
+<i>
+&lt;option&gt;...&lt;/option&gt; </i><font face="Times New Roman"><br>
+Определить элемент меню внутри элемента &lt;</font><i>select</i><font face="Times New Roman">&gt; в &lt;</font><i>form</i>&gt;. <b><font face="Times New Roman"><br>
+<font size="-1"><b>Атрибуты</b></font> </font></b><i><br>
+selected </i><font face="Times New Roman"><br>
+Элемент отображается как выбранный по умолчанию. <i><br>
+value=строка </i><br>
+Возвратить указанное значение данного элемента в приложение обработки форм вместо содержимого &lt;</font><i>option</i>&gt;. </td>
+</tr>
+<tr><td width="25%" valign="TOP">
+<b>
+&lt;select&gt;</b></td>
+<td width="75%" valign="TOP">
+<i>
+&lt;select&gt;...&lt;/select&gt; </i><font face="Times New Roman"><br>
+Определить в &lt;</font><i>form</i><font face="Times New Roman">&gt;меню с несколькими вариантами выбора или список прокрутки с включением одного или более тегов </font><i>&lt;option&gt;. </i><b><font face="Times New Roman"><br>
+<font size="-1"><b>Атрибуты</b></font> </font></b><i><br>
+multiple </i><font face="Times New Roman"><br>
+Пользователю разрешается выбирать в </font><i>&lt;select&gt; </i><font face="Times New Roman">более одного</font><i> </i>&lt;<i>option</i>&gt;. <i><font face="Times New Roman"><br>
+name=строка </font></i><font face="Times New Roman"><br>
+Определить текст, который будет передаваться в приложение обработки форм при выборе соответствующего значения </font><i>&lt;option&gt;.</i><font face="Times New Roman"> Этот атрибут является необходимым. </font><i><br>
+Size=n </i><font face="Times New Roman"><br>
+Отображение элементов меню будет организовано в виде ниспадающего меню</font></td>
+</tr>
+</tbody></table>
+</p><hr size="3" width="90%" color="Navy"><hr size="2" width="70%" color="Navy">
+<font size="1">	<center>май 1998г.
+<br>©  Приморская Интернет-академия</center></font>
+
+
+</body></html>
