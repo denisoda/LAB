@@ -1,0 +1,5 @@
+/home/ilya/Documents/projects/University/lab_LP/2-lab/2-lab/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/ilya/Documents/projects/University/lab_LP/2-lab/2-lab/bin/Debug/2-lab.exe.mdb
+/home/ilya/Documents/projects/University/lab_LP/2-lab/2-lab/bin/Debug/2-lab.exe
+/home/ilya/Documents/projects/University/lab_LP/2-lab/2-lab/obj/x86/Debug/2-lab.exe
+/home/ilya/Documents/projects/University/lab_LP/2-lab/2-lab/obj/x86/Debug/2-lab.exe.mdb
