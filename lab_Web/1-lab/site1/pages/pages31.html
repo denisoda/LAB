@@ -45,13 +45,69 @@ P.p2{
   font-style:normal;
   font-size:120%;
   font-family:sans-serif;
-  
+  line-height: 1.2;
 }
 
+#maket{
+  width: 100%;
+  height: 100%;
+  border-collapse:collapse;
+}
+
+#header, #footer{
+  background: #800000;
+  color: F5F5DC;
+  font-style: italic;
+  font-size: 150%;
+  font-weight: bold;
+  font-family: sans-serif;
+  height: 50px;
+}
+
+#leftcol{
+  width: 200px;
+  border-right: 4px solid #800000;
+}
+
+#rightcol{
+  background-color: #FAEBD7;
+}
 </style>
 </head>
 <body>
-<h1>test h1</h1>
+<table id="maket" cellspacing="0" cellpadding="0">
+  <tr>
+    <th id="header" colspan="2" style="vertical-align:middle">
+      CSS
+    </th>
+  </tr>
+  <tr>
+    <th id="leftcol">
+      <p class="p1">Defenition</p>
+      <p class="p1">Syntaxis</p>
+      <p class="p1">Type of selectors</p>
+      <p class="p1">Ways of insertings styles</p>
+      <p class="p1">Order of applying styles</p>
+      <p class="p1">Styles of tables and lists</p>
+      <p class="p1">Pseudo-classes and pseudo-elements</p></td>
+    </th>
+    <th id="rightcol">
+      <h1 align="left"> <aname="definition"> Definition</a></h1>
+      <p class="p2">CSS (Cascading Style Sheets) is a technology for controlling the appearance of elements (tags) of a web page. Using CSS allows you to split the layout and contents of a document. The same style sheet can be applied to several documents, and, conversely, several style sheets can be applied to the same document.
+      </p>
+      <h1 align="left"> <aname="defenition"> Syntaxis </a></h1>
+      <p class=p2>
+        Selector
+         {
+        property1: value1;
+         property2: value2;
+        property3: value3 ;
+        }
+      </p>
+    </th>
+
+  </tr>
+</table>
 
 </body>
 </html>
